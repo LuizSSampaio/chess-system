@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class UI {
     // https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
-
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_YELLOW = "\u001B[33m";
     public static final String ANSI_WHITE = "\u001B[37m";
@@ -17,6 +16,12 @@ public class UI {
     public static final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
     public static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
     public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
+
+    // https://stackoverflow.com/questions/2979383/java-clear-the-console
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
 
     //Read the input of user to move the piece
     public static ChessPosition readChessPosition(Scanner sc) {
