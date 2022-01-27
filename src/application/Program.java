@@ -1,6 +1,5 @@
 package application;
 
-import boardgame.Board;
 import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
