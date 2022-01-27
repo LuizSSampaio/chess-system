@@ -44,6 +44,8 @@ public class Program {
             finally {
                 UI.clearScreen();
             }
-        } while (true);
+        } while (!chessMatch.isCheckMate());
+        UI.clearScreen();
+        UI.printMatch(chessMatch, captured);
     }
 }
