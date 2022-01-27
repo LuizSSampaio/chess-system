@@ -19,7 +19,7 @@ Entre no diretório do projeto
   cd chess-system
 ```
 
-Inicie o servidor
+Inicie o jogo
 
 ```bash
   java application/Program
